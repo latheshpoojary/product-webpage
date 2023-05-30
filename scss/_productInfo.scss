@@ -20,8 +20,7 @@ p {
 
     // padding: 10px 20px;
     border-radius: 10px;
-    
-    // text-align: center;
+
 }
 
 img {
@@ -67,8 +66,8 @@ h3 {
         // gap: 15px;
         width: 100%;
         // padding-right: 10px;
-       
-        h3{
+
+        h3 {
             font-family: FFDINforPuma,
                 Inter,
                 -apple-system,
@@ -80,19 +79,19 @@ h3 {
                 Arial,
                 sans-serif;
             color: rgba(255, 0, 0, 0.938);
-            
+
         }
+
         // margin-top: 10%;
-        .colors
-         {
+        .colors {
             width: 100%;
             // border: 1px solid red;
             margin-left: 0;
             display: flex;
             justify-content: space-between;
-        
 
-             button {
+
+            button {
                 width: 30%;
                 padding: 10px 20px;
                 border-radius: 30px;
@@ -107,17 +106,18 @@ h3 {
                     color: white;
                 }
             }
-                       
+
 
 
         }
-        .size{
-             width: 100%;
+
+        .size {
+            width: 100%;
             // border: 1px solid red;
             margin-left: 0;
             display: flex;
             justify-content: space-between;
-        
+
 
             & button {
                 width: 30%;
@@ -133,41 +133,48 @@ h3 {
                 }
             }
         }
-        .duct-description{
+
+        .duct-description {
             display: flex;
             flex-direction: column;
             margin-left: 0;
-            & h4{
+
+            & h4 {
                 font-size: 18px;
                 line-height: 1.5;
-                
+
             }
-            h5{
+
+            h5 {
                 font-size: 1rem;
                 line-height: 1.5;
             }
-            & ul 
-            {
+
+            & ul {
                 padding-left: 1rem;
-            & li{
-               color:rgba(138, 115, 80,1) ; 
-               
-            //    background-color: black;
+
+                & li {
+                    color: rgba(138, 115, 80, 1);
+
+                    //    background-color: black;
+                }
             }
+
+
         }
-            
-            
-        }
-        .shipping{
-             display: flex;
+
+        .shipping {
+            display: flex;
             flex-direction: column;
             margin-left: 0;
-            & h4{
+
+            & h4 {
                 font-size: 18px;
                 line-height: 1.5;
-                
+
             }
-            h5{
+
+            h5 {
                 font-size: 1rem;
                 line-height: 1.5;
             }
@@ -197,96 +204,110 @@ h3 {
     // background: ;
     // margin: 30px;
     background: rgb(229, 231, 235);
+
     // padding: 2.7%;
-    article{
+    article {
         display: flex;
         flex-direction: column;
 
-    
-    // border: 1px solid red;
-    & div{
-        margin: 10px 0;
-    }
-    & h3{
-        line-height: 1.4;
-    }
-    & p{
-        // padding: 10px 0;
-        margin: 0;
-        font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        font-weight: 400;
-        color: rgba(24,24,24,0.7);
-        line-height: 1.4;
-    }
-    .features {
-        display: flex;
-        justify-content: space-between;
-        .benifit {
-            display: flex;
-            flex-direction: column;
-            & h3{
-                line-height: 1.4;
-            }
-            & ul{
-                // padding: auto 0;
-                padding-left: 1rem;
-            }
 
-            & ul li {
-                // line-height: 1rem;
-                color:rgba(138, 115, 80,1) ; ;
-                padding-top: 0.25rem;
-                padding-bottom: 0.25rem;
-            }
-
-        }
-        & .details ul{
-            padding-left: 1rem;
-            & li{
-                color:rgba(138, 115, 80,1) ; ;
-                padding-top: 0.25rem;
-                padding-bottom: 0.25rem;
-            }
+        // border: 1px solid red;
+        & div {
+            margin: 10px 0;
         }
 
-    }
+        & h3 {
+            line-height: 1.4;
+        }
 
-    .manufatures {
-        display: flex;
-        // justify-content: space-between;
-
-        // justify-content: space-around;
-        // column-gap: 400px;
-        .address {
-            display: flex;
-            flex-direction: column;
-            width: 75%;
-            justify-content: left;
+        & p {
+            // padding: 10px 0;
+            margin: 0;
+            font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            color: rgba(24, 24, 24, 0.7);
+            line-height: 1.4;
             text-align: left;
-            h3 {
-                text-transform: uppercase;
-            }
-            p{
-                padding: 0;
-                text-align: left;
-            }
         }
 
-        .country {
+        .features {
+            display: flex;
+            justify-content: space-between;
 
-            // border: 1px solid red;
-            // width: 100%;
-            h3 {
-                text-transform: capitalize;
+            .benifit {
+                display: flex;
+                flex-direction: column;
+
+                & h3 {
+                    line-height: 1.4;
+                }
+
+                & ul {
+                    // padding: auto 0;
+                    padding-left: 1rem;
+                }
+
+                & ul li {
+                    // line-height: 1rem;
+                    color: rgba(138, 115, 80, 1);
+                    ;
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.25rem;
+                }
+
+            }
+
+            & .details ul {
+                padding-left: 1rem;
+
+                & li {
+                    color: rgba(138, 115, 80, 1);
+                    ;
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.25rem;
+                }
+            }
+
+        }
+
+        .manufatures {
+            display: flex;
+            // justify-content: space-between;
+
+            // justify-content: space-around;
+            // column-gap: 400px;
+            .address {
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+                justify-content: left;
+                text-align: left;
+
+                h3 {
+                    text-transform: uppercase;
+                }
+
+                p {
+                    padding: 0;
+                    text-align: left;
+                }
+            }
+
+            .country {
+
+                // border: 1px solid red;
+                // width: 100%;
+                h3 {
+                    text-transform: capitalize;
+                }
             }
         }
     }
 }
-}
 
 
 
-@media screen and (320px <= width <=425px) {
+@media screen and (320px <=width <=425px) {
     .product-desc {
         grid-template-columns: 1fr;
         margin: 0;
@@ -297,12 +318,13 @@ h3 {
             // flex-direction: column;
             // justify-content: space-between;
             padding: 0;
-            
+
 
         }
-        .right{
+
+        .right {
             padding-bottom: 15px;
-            
+
         }
 
         // .right button {
@@ -313,18 +335,20 @@ h3 {
 
 
     }
-        .product-desc .right .buyme {
-            // border: 2px solid red;
-            width: 30%;
-            padding: 10px 0;
-            // border: 1px solid red;
-    
-        }
+
+    .product-desc .right .buyme {
+        // border: 2px solid red;
+        width: 30%;
+        padding: 10px 0;
+        // border: 1px solid red;
+
+    }
 
     .description {
         margin: 0;
         // padding: 2.7%;
         border: 1px solid red;
+
         h3 {
             margin: 0;
         }
@@ -338,8 +362,9 @@ h3 {
 
             .address {
                 width: 100%;
+
                 // color: aqua;
-                p{
+                p {
                     text-align: none;
                 }
             }
@@ -348,17 +373,18 @@ h3 {
 
 
 }
+
 @media screen and (659px < width <=1128px) {
-    .product-desc .right .buyme{
+    .product-desc .right .buyme {
         // border: 2px solid red;
         width: 60%;
 
     }
-    
 
-.description article p{
-    width: 75%;
-}
-    
+
+    .description article p {
+        width: 75%;
+    }
+
 
 }
