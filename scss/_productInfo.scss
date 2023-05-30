@@ -1,0 +1,362 @@
+@import '../scss/footer';
+
+h4 {
+
+
+    display: block;
+    font-size: medium;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 3% 0;
+}
+
+p {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+
+    // width: 100px;
+
+    // padding: 10px 20px;
+    border-radius: 10px;
+    // text-align: center;
+}
+
+img {
+    width: 40%;
+    height: 40%;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.product-desc {
+    display: grid;
+    // grid-template-columns: 2fr 1fr;
+    padding-top: 2%;
+
+
+    .left {
+        // border: 1px solid red;
+        // margin-top: 10%;
+        width: 100%;
+        height: 100%;
+        // border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 10px;
+
+        img {
+            width: 45%;
+            height: 45%;
+            background: grey;
+            margin: 5px;
+        }
+
+
+    }
+
+    .right {
+        // display: flex;
+        // flex-direction: column;
+        // gap: 15px;
+        width: 100%;
+        // padding-right: 10px;
+       
+        h3{
+            font-family: FFDINforPuma,
+                Inter,
+                -apple-system,
+                system-ui,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                "Helvetica Neue",
+                Arial,
+                sans-serif;
+            color: rgba(255, 0, 0, 0.938);
+            
+        }
+        // margin-top: 10%;
+        .colors
+         {
+            width: 100%;
+            // border: 1px solid red;
+            margin-left: 0;
+            display: flex;
+            justify-content: space-between;
+        
+
+             button {
+                width: 30%;
+                padding: 10px 20px;
+                border-radius: 30px;
+                border: 1px solid grey;
+                background: transparent;
+                transition: all 0.3s ease-in-out;
+                margin: 0;
+                // margin: 3% 0;
+
+                &:focus {
+                    background: black;
+                    color: white;
+                }
+            }
+                       
+
+
+        }
+        .size{
+             width: 100%;
+            // border: 1px solid red;
+            margin-left: 0;
+            display: flex;
+            justify-content: space-between;
+        
+
+            & button {
+                width: 30%;
+                padding: 10px 20px;
+                border-radius: 30px;
+                border: 1px solid grey;
+                background: transparent;
+                transition: all 0.3s ease-in-out;
+
+                &:focus {
+                    background: black;
+                    color: white;
+                }
+            }
+        }
+        .duct-description{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            & h4{
+                font-size: 18px;
+                line-height: 1.5;
+                
+            }
+            h5{
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            & ul 
+            {
+                padding-left: 1rem;
+            & li{
+               color:rgba(138, 115, 80,1) ; 
+               
+            //    background-color: black;
+            }
+        }
+            
+            
+        }
+        .shipping{
+             display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            & h4{
+                font-size: 18px;
+                line-height: 1.5;
+                
+            }
+            h5{
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        }
+
+
+        & .buyme {
+
+
+            padding: 10px 25px;
+            border-radius: 40px;
+            border: 1px solid grey;
+            transition: all 0.3s ease;
+            width: 30%;
+            margin: 3% 0;
+
+            &:hover {
+                background-color: rgba(255, 0, 0, 0.781);
+            }
+
+        }
+
+    }
+}
+
+.description {
+    // background: ;
+    // margin: 30px;
+    background: rgb(229, 231, 235);
+    // padding: 2.7%;
+    article{
+        display: flex;
+        flex-direction: column;
+
+    
+    // border: 1px solid red;
+    & div{
+        margin: 10px 0;
+    }
+    & h3{
+        line-height: 1.4;
+    }
+    & p{
+        // padding: 10px 0;
+        margin: 0;
+        font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        color: rgba(24,24,24,0.7);
+        line-height: 1.4;
+    }
+    .features {
+        display: flex;
+        justify-content: space-between;
+        .benifit {
+            display: flex;
+            flex-direction: column;
+            & h3{
+                line-height: 1.4;
+            }
+            & ul{
+                // padding: auto 0;
+                padding-left: 1rem;
+            }
+
+            & ul li {
+                // line-height: 1rem;
+                color:rgba(138, 115, 80,1) ; ;
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+            }
+
+        }
+        & .details ul{
+            padding-left: 1rem;
+            & li{
+                color:rgba(138, 115, 80,1) ; ;
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+            }
+        }
+
+    }
+
+    .manufatures {
+        display: flex;
+        // justify-content: space-between;
+
+        // justify-content: space-around;
+        // column-gap: 400px;
+        .address {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            justify-content: left;
+            h3 {
+                text-transform: uppercase;
+            }
+            p{
+                padding: 0;
+                text-align: none;
+            }
+        }
+
+        .country {
+
+            // border: 1px solid red;
+            // width: 100%;
+            h3 {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+}
+
+
+
+@media screen and (320px <= width <=425px) {
+    .product-desc {
+        grid-template-columns: 1fr;
+        margin: 0;
+        // padding: 0 10px;
+
+        .left {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            padding: 0;
+            
+
+        }
+        .right{
+            padding-bottom: 15px;
+            
+        }
+
+        // .right button {
+        //     // margin-left: 50%;
+        //     // transform: translate(-50%, -50%);
+        // }
+
+
+
+    }
+        .product-desc .right .buyme {
+            // border: 2px solid red;
+            width: 30%;
+            padding: 10px 0;
+            // border: 1px solid red;
+    
+        }
+
+    .description {
+        margin: 0;
+        // padding: 2.7%;
+        border: 1px solid red;
+        h3 {
+            margin: 0;
+        }
+
+        .features {
+            flex-direction: column;
+        }
+
+        .manufatures {
+            flex-direction: column;
+
+            .address {
+                width: 100%;
+                // color: aqua;
+                p{
+                    text-align: none;
+                }
+            }
+        }
+    }
+
+
+}
+@media screen and (659px < width <=1128px) {
+    .product-desc .right .buyme{
+        // border: 2px solid red;
+        width: 60%;
+
+    }
+    
+
+.description article p{
+    width: 75%;
+}
+    
+
+}

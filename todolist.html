@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDo List</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="padding-right: 0px;">
+    <nav >
+        <article>
+            <div class="header">
+                <a href="./index.html#">PUMA</a>
+                <div id="menu" class="menu" onclick="toggleMenu()">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+            <div class=" nav_links">
+                <a href="./index.html#" class="nav_link "><span>Home</span></a>
+                <a href="./productInfo.html" onclick="toggleMenu()" class="nav_link"><span>Categories</span></a>
+                <a href="./service.html" class="nav_link"><span>Service</span></a>
+                <a href="#footer" class="nav_link"><span>About</span></a>
+                <a href="./todolist.html" class="nav_link active"><span>ToDo</span></a>
+                <a href="#contact" class="nav_link button">Contact</a>
+            </div>
+        </article>
+    </nav>
+
+    <article>
+        <!-- <button class="custom-btn btn-4" id="add Todo"><span>Add Todo</span></button> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Add Todo</button>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="myForm">
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Todo Title</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Todo Description</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Todo Target date</label>
+                                <input type="date" class="form-control" id="date" >
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Todo Priority</label>
+                                <select name="" id="choice">
+                                    <option value="0 0 10px 5px red">Red</option>
+                                    <option value="0 0 10px 5px blue">blue</option>
+                                    <option value="0 0 10px 5px green">Green</option>
+                                </select>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="reset" class="btn btn-secondary" data-dismiss="modal" id="close">Close</button>
+                                <button type="submit" class="btn btn-primary" data-dismiss="modal-backdrop fade show">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </article>
+    <section>
+        <div class="containerBox">
+            <div class="todoHeader">
+                <h1>Todo</h1>
+                
+
+            </div>
+            <div class="workingheader">
+                <h1>Working</h1>
+                <div class="desti"></div>
+            </div>
+            <div class="doneheader">
+                <h1>Done</h1>
+                <div class="destiDone"></div>
+            </div>
+        </div>
+        <!-- <article>
+            <div class="container">
+                <div class="todo">
+                    <h2>Todo</h2>
+                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;" draggable="true">
+                        <div class="card-header">Header list</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dark card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="working" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+                    <h2>Working</h2>
+                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;" draggable="true">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dark card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="done" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+                    <h2>Done</h2>
+                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dark card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+
+       <!-- <div class="pop-up">
+                <i class="fas fa-times" id="close"></i>
+                <h2>Add New ToDo</h2>
+
+                <form action="" id="myForm">
+                    <label for="title">Todo Title</label>
+                    <input type="text" id="title">
+                    <label for="desc">Todo Description</label>
+                    <input type="text" id="desc">
+                    <label for="date">Todo Target Date</label>
+                    <input type="date" id="date">
+                    <label for="priority">ToDo Priority</label>
+                    <select name="priority" id="choice">
+                        <option value="0 0 10px 5px red">Red</option>
+                        <option value="0 0 10px 5px blue">blue</option>
+                        <option value="0 0 10px 5px green">Green</option>
+                    </select>
+                    <button id="submit">Save</button>
+                </form>
+
+
+            </div> -->
+            
+
+        </article>
+    </section> 
+    <script src="./js/drag.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    
+
+   
+    
+    <script src="./js/addtodo.js"></script>
+    <script src="https://kit.fontawesome.com/3ea046d1cb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
