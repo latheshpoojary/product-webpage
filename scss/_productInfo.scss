@@ -20,7 +20,7 @@ p {
 
     // padding: 10px 20px;
     border-radius: 10px;
-    text-align: none;
+    
     // text-align: center;
 }
 
@@ -262,12 +262,13 @@ h3 {
             flex-direction: column;
             width: 75%;
             justify-content: left;
+            text-align: left;
             h3 {
                 text-transform: uppercase;
             }
             p{
                 padding: 0;
-                text-align: none;
+                text-align: left;
             }
         }
 
